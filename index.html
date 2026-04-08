@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Horizontal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="form">
+
+            <div class="form-header">
+                <h1>Cadastre-se</h1>
+            </div>
+
+            <div class="input-group">
+
+                <!-- 1 -->
+                <div class="input-box">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Digite seu nome" required>
+                </div>
+
+                <!-- 2 -->
+                <div class="input-box">
+                    <label>Sobrenome</label>
+                    <input type="text" placeholder="Digite seu sobrenome" required>
+                </div>
+
+                <!-- 3 -->
+                <div class="input-box">
+                    <label>Email</label>
+                    <input type="email" placeholder="Digite seu email" required>
+                </div>
+
+                <!-- 4 -->
+                <div class="input-box">
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="(xx) xxxx-xxxx">
+                </div>
+
+                <!-- 5 -->
+                <div class="input-box">
+                    <label>Data de Nascimento</label>
+                    <input type="date">
+                </div>
+
+                <!-- 6 -->
+                <div class="input-box">
+                    <label>Estado</label>
+                    <select required>
+                        <option value="">Selecione</option>
+                        <option>Acre</option>
+                        <option>Alagoas</option>
+                        <option>Amapá</option>
+                        <option>Amazonas</option>
+                        <option>Bahia</option>
+                        <option>Ceará</option>
+                        <option>Distrito Federal</option>
+                        <option>Espírito Santo</option>
+                        <option>Goiás</option>
+                        <option>Maranhão</option>
+                        <option>Mato Grosso</option>
+                        <option>Mato Grosso do Sul</option>
+                        <option>Minas Gerais</option>
+                        <option>Pará</option>
+                        <option>Paraíba</option>
+                        <option>Paraná</option>
+                        <option>Pernambuco</option>
+                        <option>Piauí</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Rio Grande do Norte</option>
+                        <option>Rio Grande do Sul</option>
+                        <option>Rondônia</option>
+                        <option>Roraima</option>
+                        <option>Santa Catarina</option>
+                        <option>São Paulo</option>
+                        <option>Sergipe</option>
+                        <option>Tocantins</option>
+                    </select>
+                </div>
+
+                <!-- 7 -->
+                <div class="input-box full">
+                    <label>Gênero</label>
+                    <div class="options">
+                        <label><input type="radio" name="gender"> Masculino</label>
+                        <label><input type="radio" name="gender"> Feminino</label>
+                        <label><input type="radio" name="gender"> Outro</label>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="input-box full">
+                    <label>Interesses</label>
+                    <div class="options">
+                        <label><input type="checkbox"> Tecnologia</label>
+                        <label><input type="checkbox"> Jogos</label>
+                        <label><input type="checkbox"> Música</label>
+                        <label><input type="checkbox"> Esportes</label>
+                        <label><input type="checkbox"> Filmes e Séries</label>
+                    </div>
+                </div>
+
+                <div class="input-box full">
+                    <label>Mensagem</label>
+                    <textarea placeholder="Digite sua mensagem..." rows="4"></textarea>
+                </div>
+
+
+                <!-- 10 -->
+                <div class="input-box full" id="captcha-container" style="display: none;">
+                    <label>
+                        <input type="checkbox" id="captcha-check">
+                        Não sou um robô
+                    </label>
+                </div>
+
+                <!-- 11 -->
+                <div class="button">
+                    <button type="button" id="btnCadastrar">Cadastrar</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
